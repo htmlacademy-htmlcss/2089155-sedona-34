@@ -139,7 +139,7 @@ body {
   background-color: #ffff;
 }
 
-.advantages {
+.advantages-hotel {
   text-align: center;
 }
 .advantages-title {
@@ -165,8 +165,8 @@ body {
   background: #756157;
 }
 
-.newsletter {
-  background-image: url("../image/background.jpg");
+.newsletter-1 {
+  background-image: url("../image/background-1.jpg");
   color: #ffffff;
   background-color: #000000;
   background-size: 100% auto;
@@ -206,4 +206,120 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+}
+
+.inner-header {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../image/background-2.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat; 
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: capitalize;
+}
+
+.button-1 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #82B3D3;
+}
+
+.button-2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.select-control h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.product-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-card-price {
+  color: #333333;
+}
+
+.product-card-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #756157;
+}
+
+.button-3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #7DB54F;
+}
+
+.product-card-raiting {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px; 
+  text-transform: uppercase;
+  color: #333333;
+  background: #F2F2F2;
+}
+
+.about-text {
+  color: #333333;
+}
+
+.newsletter {
+  text-align: center;
+}
+
+.newsletter-content-1 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
 }
