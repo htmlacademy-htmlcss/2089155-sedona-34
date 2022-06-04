@@ -48,21 +48,21 @@ body {
   background-repeat: no-repeat;
 }
 
-.content-text b {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  color: #242424;
+.index-text {
+  text-align: center;
+  background-color: #FFFFFF; 
 }
 
 .content-text {
   color: #333333;
 }
 
-.index-text {
-  text-align: center;
-  background-color: #FFFFFF; 
+.content-text-big {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #242424;
 }
 
 .advantages-item-1 {
@@ -158,7 +158,7 @@ body {
   text-align: center;
 }
 
-.newsletter-content b {
+.newsletter-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -219,13 +219,16 @@ body {
   text-transform: capitalize;
 }
 
-.button-1 {
+.button {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+}
+.button-1 {
   color: #FFFFFF;
   background: #82B3D3;
 }
@@ -233,7 +236,6 @@ body {
 .button-2 {
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
   color: #FFFFFF;
 }
 
@@ -262,23 +264,11 @@ body {
 }
 
 .product-card-button {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
   color: #FFFFFF;
   background: #756157;
 }
 
 .button-3 {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
   color: #FFFFFF;
   background: #7DB54F;
 }
