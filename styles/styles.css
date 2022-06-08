@@ -14,12 +14,42 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+} 
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #242424;
   background-color: #FFFFFF;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-logo{
+  width: 139px;
+  margin-right: auto;
+}
+
+.navigation-list {
+  width: 500px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 300px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -40,12 +70,26 @@ body {
   background-color: #dbb590;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .main-index {
   color: #000000;
   background-color: #FFFFFF;
   background-image: url("../image/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.content-image{
+  display: block;
+  margin: 0 auto;
 }
 
 .index-text {
@@ -65,7 +109,17 @@ body {
   color: #242424;
 }
 
+.advantages-list {
+  margin: 0;
+  padding: 0;
+}        
+
+.index-list {
+display: flex;
+}
+
 .advantages-item-1 {
+  width: 400px;
   color: #FFFFFF;
   background: #82B3D3;
 }
@@ -106,6 +160,10 @@ body {
 
 .advantages-list-1 {
   text-align: center;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 1200px;
 }
 
 .advantages-item-2 {
@@ -182,7 +240,22 @@ body {
   align-items: center;
 }
 
+.page-footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.footer-social-list {
+  margin-left: 70px;
+  padding: 0;
+  width: 142px;
+  
+}
+
 .footer-contacts-address-phone {
+  width: 331px;
   font-style: normal;
   font-size: 40px;
   line-height: 40px;
@@ -192,7 +265,13 @@ body {
   color: #000000;
 }
 
+.footer-logo{
+  width: 115px;
+  margin-right: 70px;
+}
+
 .inner-header {
+  padding: 0 70px;
   color: #ffffff;
   background-color: #000000;
   background-image: url("../image/background-2.jpg");
@@ -210,6 +289,12 @@ body {
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
+}
+
+.index-catalog {
+  display: flex;
+  margin: 0 auto;
+  width: 1060px;
 }
 
 .catalog-filter-title {
@@ -237,6 +322,11 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+}
+
+.product-list {
+  margin: 0 73px 0 71px;
+  padding: 0;
 }
 
 .select-control h2 {
