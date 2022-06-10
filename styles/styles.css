@@ -14,7 +14,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+} 
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
@@ -22,6 +30,44 @@ body {
   background-color: #FFFFFF;
 }
 
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation-logo{
+  width: 139px;
+  margin: 0 30px 0 70px;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 490px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-item {
+padding: 0 34px 0 17px;
+}
+
+.navigation-user {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin-left: auto;
+}
+
+.navigation-item-1 {
+  padding: 0 12px;
+}
+
+  
 .navigation-link {
   font-size: 20px;
   line-height: 26px;
@@ -40,12 +86,21 @@ body {
   background-color: #dbb590;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 .main-index {
   color: #000000;
   background-color: #FFFFFF;
   background-image: url("../image/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.content-image{
+  display: block;
+  margin: 0 auto;
 }
 
 .index-text {
@@ -65,7 +120,16 @@ body {
   color: #242424;
 }
 
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}        
+
 .advantages-item-1 {
+  display: flex;
+  flex-wrap: wrap;
   color: #FFFFFF;
   background: #82B3D3;
 }
@@ -104,8 +168,8 @@ body {
   color: #333333;
 }
 
-.advantages-list-1 {
-  text-align: center;
+.advantages-item {
+  width: 400px;
 }
 
 .advantages-item-2 {
@@ -182,7 +246,22 @@ body {
   align-items: center;
 }
 
+.page-footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.footer-social-list {
+  margin-left: 70px;
+  padding: 0;
+  width: 142px;
+  
+}
+
 .footer-contacts-address-phone {
+  width: 331px;
   font-style: normal;
   font-size: 40px;
   line-height: 40px;
@@ -192,7 +271,13 @@ body {
   color: #000000;
 }
 
+.footer-logo{
+  width: 115px;
+  margin-right: 70px;
+}
+
 .inner-header {
+  padding: 0 70px;
   color: #ffffff;
   background-color: #000000;
   background-image: url("../image/background-2.jpg");
@@ -210,6 +295,12 @@ body {
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
+}
+
+.index-catalog {
+  display: flex;
+  margin: 0 auto;
+  width: 1060px;
 }
 
 .catalog-filter-title {
@@ -237,6 +328,11 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+}
+
+.product-list {
+  margin: 0 73px 0 71px;
+  padding: 0;
 }
 
 .select-control h2 {
