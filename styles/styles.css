@@ -391,9 +391,15 @@ body {
 .sorting-container .button {
   width: 48px;
   height: 48px;
+  background-color: #000000;
 }
 
-.select-control h2 {
+.sorting-container .button:not(:last-child) {
+  margin-right: 8px;
+}
+
+.select-control-title {
+  margin-right: auto ;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -438,7 +444,6 @@ body {
 .pagination-container {
   display: flex;
   padding: 14px; 
-  background-color: #ffffff;
 }
 
 .pagination {
@@ -463,10 +468,17 @@ body {
   background-color: #82B3D3;
   text-decoration: none;
 }
+
+.pagination-current {
+  color: #000000;
+  background: #F2F2F2;
+}
+
 .pagination-about-text {
   margin-left: auto;
 }
-.about-text {
+
+.pagination-about-text {
   color: #333333;
 }
 
