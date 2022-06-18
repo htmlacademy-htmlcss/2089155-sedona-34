@@ -18,6 +18,12 @@ html {
   height: 100%;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -39,7 +45,7 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-} 
+}
 
 .page-container {
   width: 1200px;
@@ -54,7 +60,7 @@ body {
 
 .navigation-logo {
   width: 139px;
-  margin: 0 30px 0 70px;
+  margin: 0 30px -30px 70px;
 }
 
 .navigation-list {
@@ -336,11 +342,11 @@ body {
 
 .breadcrumbs {
   margin: 0;
-  padding: 0; 
+  padding: 0;
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
-  
+
 }
 
 .index-catalog {
@@ -379,13 +385,23 @@ body {
 }
 
 .product-list {
-  margin: 0 73px 0 71px;
+  margin: 0 72px;
   padding: 0;
+}
+
+.product-list-card {
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  column-gap: 18px;
+  margin: 0;
+  margin-bottom: 66px;
+  padding: 0;
+  list-style-type: none;
 }
 
 .sorting-container {
   display: flex;
-  padding: 50px 72px 25px;
+  margin: 58px 72px;
 }
 
 .sorting-container .button {
@@ -399,14 +415,29 @@ body {
 }
 
 .select-control-title {
-  margin-right: auto ;
+  margin-right: auto;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
 }
 
+.product-card {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 20px 16px;
+
+}
+
 .product-card-title {
+  margin: 16px 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -443,14 +474,16 @@ body {
 
 .pagination-container {
   display: flex;
-  padding: 14px; 
+  /* padding: 34px; */
 }
 
 .pagination {
- display: flex;
- margin: 0;
- padding: 0;
- list-style-type: none;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 24px;
+  margin-right: auto;
+  padding: 0;
+  list-style-type: none;
 }
 
 .pagination-item:not(:last-child) {
