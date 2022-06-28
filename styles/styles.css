@@ -80,13 +80,14 @@ body {
   max-width: 350px;
   margin-left: auto;
 }
+
 .navigation-icon {
   position: relative;
 }
 
 .navigation-icon-favorite {
- position: absolute;
- margin: -5px 0 0 -5px;
+  position: absolute;
+  margin: -5px 0 0 -5px;
 }
 
 .navigation-link {
@@ -107,7 +108,7 @@ body {
   right: 17px;
   bottom: 0;
   left: 17px;
-  height: 4px;
+  height: 2px;
   background-color: #756257;
   content: "";
 }
@@ -149,11 +150,11 @@ body {
 .main-index {
   color: #000000;
   background-color: #FFFFFF;
-  background-image: url("../image/index-background.jpg"),
-  url("../image/divider.png");
+  background-image: url("../image/divider.png"),
+    url("../image/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: top center, bottom ;
+  background-position: top 425px center, top center;
 }
 
 .content-image {
@@ -320,7 +321,7 @@ body {
   background: #756157;
 }
 
-.advantages-link:focus  {
+.advantages-link:focus {
   background: #615048;
 }
 
@@ -349,7 +350,7 @@ body {
   margin-bottom: 46px;
 }
 
-.newsletter-button{
+.newsletter-button {
   color: #FFFFFF;
   background: #82B3D3;
 }
@@ -435,12 +436,12 @@ body {
   color: #756157;
 }
 
-.footer-contacts-address-phone:active {
-  color: rgba(117, 97, 87, 0.3);
-}
-
 .footer-contacts-address-phone:focus {
   color: #756157;
+}
+
+.footer-contacts-address-phone:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .footer-logo {
@@ -492,15 +493,15 @@ body {
 }
 
 .breadcrumbs-item + .breadcrumbs-item:before {
- content: "";
- position: absolute;
- top: 50%;
- transform: translateY(-50%);
- left: -15px;
- width: 6px;
- height: 9px;
- background-image: url("../image/right-arrow.svg");
- background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -15px;
+  width: 6px;
+  height: 9px;
+  background-image: url("../image/right-arrow.svg");
+  background-repeat: no-repeat;
 }
 
 .breadcrumbs-link {
@@ -608,7 +609,8 @@ body {
 }
 
 .card-grid-toggle:active {
-border: 2px solid #000000;}
+  border: 2px solid #000000;
+}
 
 .card-grid-toggle:focus {
   border: 2px solid #68A2CA;
@@ -663,6 +665,19 @@ border: 2px solid #000000;}
   color: #FFFFFF;
   background: #756157;
   text-decoration: none;
+}
+
+.product-card-button:hover {
+  background: #615048;
+}
+
+.product-card-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background: #756157;
+}
+
+.product-card-button:focus {
+  background: #615048;
 }
 
 .button-3 {
@@ -744,11 +759,11 @@ border: 2px solid #000000;}
   text-decoration: none;
 }
 
-.pagination-link:hover {
+.pagination-link:hover:not(:first-child) {
   background: #68A2CA;
 }
 
-.pagination-link:active {
+.pagination-link:active:not(:first-child) {
   color: rgba(255, 255, 255, 0.3);
   background: #82B3D3;
 }
@@ -765,6 +780,12 @@ border: 2px solid #000000;}
 .pagination-about-text {
   margin-left: auto;
   color: #333333;
+}
+
+.select-pagination {
+  margin-left: 50px;
+  width: 160px;
+  min-height: 49px;
 }
 
 .newsletter {
