@@ -62,7 +62,7 @@
               </a>
             </li>
             <li class="navigation-item-1">
-              <a class="navigation-link button">Хочу сюда!</a>
+              <a class="button navigation-link" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -84,7 +84,7 @@
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Гостиницы</a>
+              <a class="breadcrumbs-link" href="#">Гостиницы</a>
             </li>
           </ul>
           <div class="index-catalog">
@@ -185,7 +185,7 @@
             <option value="cheap">Сначала дешёвое</option>
             <option value="expensive">Сначала дорогое</option>
           </select>
-          </div>
+        </div>
           <a class="card-grid-toggle" type="button" href="#">
             <svg aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -286,7 +286,7 @@
           <div class="pagination-container">
             <ul class="pagination">
               <li class="pagination-item">
-                <a class="pagination-link pagination-current">1</a>
+                <a class="pagination-link pagination-current" href="#">1</a>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link" href="#">2</a>
@@ -316,10 +316,10 @@
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
           <p class="newsletter-content-1">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="newsletter-email">Email</label>
+            <label for="newsletter-email"><span class="visually-hidden">Email</span></label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
               required>
-            <button class="button newsletter-button" type="submit">
+            <button class="newsletter-button" type="submit">
               <span>Подписаться</span>
             </button>
           </form>
