@@ -277,10 +277,21 @@
             </p>
 
             <p class="field-group appointment-form-people">
-              <label class="form-label form-label-people" for="appointment-people">
+              <span class="form-label form-label-icon">
+              <label class="form-label form-label-people-child" for="appointment-people">
                 Дети:
               </label>
-              <input class="field-appointment-people" type="text" id="appointment-people" name="appointment-people" placeholder="1">
+              <span class="tooltip">
+                <button class="tooltip" type="button" aria-labelledby="tooltip-label">
+                  <svg class="tooltip-icon" width="3" height="12" viewBox="0 0 3 12" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.114258 0H2.11426V2H0.114258V0ZM2.11426 12H0.114258V3H2.11426V12Z"/>
+                    </svg>
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                </span>
+              </span>
+              </span>
+              <input class="field-appointment-people-child" type="text" id="appointment-people" name="appointment-people" placeholder="1">
             </p>
 </div>
             <button class="button appointment-submit" type="submit">Найти</button>

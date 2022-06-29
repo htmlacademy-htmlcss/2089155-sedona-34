@@ -523,6 +523,19 @@ body {
   cursor: pointer;
 }
 
+.modal-close-button:hover {
+  background: #E6E6E6;
+}
+
+.modal-close-button:active {
+  background: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  background: #E6E6E6;
+  border: 3px solid #83B3D3;
+}
+
 .modal-title {
   margin: 0;
   margin-bottom: 63px;
@@ -553,6 +566,11 @@ body {
   margin-top: 10px;
 }
 
+.form-label-icon {
+  position: relative;
+  padding-right: 16px;
+}
+
 .field-appointment {
   width: 420px;
   padding: 15px 19px;
@@ -566,10 +584,44 @@ body {
   background-position: right 17px center;
 }
 
+.field-appointment:hover {
+  color: #000000;
+  opacity: 0.6;
+  background: #E6E6E6;
+}
+
+.field-appointment:active {
+  color: #000000;
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.field-appointment:focus {
+  color: #000000;
+  opacity: 0.6;
+  background: #E6E6E6;
+  border: 3px solid #83B3D3;
+}
+
+
 .field-appointment-people {
   width: 133px;
   padding: 15px 61px;
   margin-right: 50px;
+  border: none;
+  border-radius: 4px;
+  background: #F2F2F2;
+  background-image: url("../image/minus.svg"),
+  url("../image/plus.svg");
+  background-repeat: no-repeat;
+  background-position: left 19px center, right 19px center;
+}
+
+.field-appointment-people-child {
+  width: 133px;
+  padding: 15px 61px;
+  margin-left: 45px;
   border: none;
   border-radius: 4px;
   background: #F2F2F2;
@@ -615,6 +667,87 @@ body {
   border: none;
   border-radius: 10px;
   background: #83B3D3;
+}
+
+.appointment-submit:hover {
+  background: #68A2CA;
+}
+
+.appointment-submit:active {
+  color: #FFFFFF;
+  opacity: 0.3;
+  background: #68A2CA;
+}
+
+.appointment-submit:focus {
+  background: #68A2CA;
+  border: 3px solid #756257;
+}
+
+.modal-container-close {
+  display: none;
+}
+
+.tooltip {
+  position: absolute;
+  margin-left: 4px;
+  width: 25px;
+  height: 25px;
+  background: #83B3D3;
+  border: none;
+  border-radius: 50%;
+}
+
+.tooltip-icon {
+  margin-bottom: 1px;
+  margin-left: 3px;
+  fill: #FFFFFF;
+  display: block;
+}
+
+.tooltip:hover .tooltip-icon {
+  background: #68A2CA;
+}
+
+.tooltip:active {
+  background: #68A2CA;
+}
+
+.tooltip-text {
+  background-color: #242424;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  width: 216px;
+  position: absolute;
+  top: 100%;
+  margin-top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: none;
+}
+
+.tooltip:hover + .tooltip-text,
+.tooltip:focus + .tooltip-text {
+  display: block;
+}
+
+.tooltip-text:after {
+  content:'';
+  background-image: url("../image/arrow-tooltip.svg");
+  width: 19px;
+  height: 9px;
+  position:absolute;
+  bottom: 100%;
+  left: 4px;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .inner-header {
