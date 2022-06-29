@@ -242,6 +242,52 @@
           </section>
         </div>
       </footer>
+
+      <div class="modal-container">
+        <div class="modal modal-search">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          </section>
+
+          <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+
+            <p class="field-group appointment-form-date">
+                <label class="form-label" for="appointment-date">
+                  Дата Заезда:</label>
+              <input class="field-appointment" type="text" id="appointment-date" name="appointment-date" placeholder="27 апреля 2020">
+            </p>
+              <p class="appointment-text">Мы не можем отправить вас в прошлое.</p>
+
+            <p class="field-group appointment-form-date">
+                <label class="form-label" for="appointment-date">
+                  Дата Выезда:</label>
+              <input class="field-appointment" type="text" id="ppointment-date" name="ppointment-date" placeholder="1 сентября 2021">
+            </p>
+              <p class="appointment-next-text">На эти даты есть свободные номера. Пока есть. </p>
+
+              <div class="people">
+            <p class="field-group appointment-form-people">
+              <label class="form-label form-label-people" for="appointment-people">
+                Взрослые:
+              </label>
+              <input class="field-appointment-people" type="text" id="appointment-people" name="appointment-people" placeholder="2">
+            </p>
+
+            <p class="field-group appointment-form-people">
+              <label class="form-label form-label-people" for="appointment-people">
+                Дети:
+              </label>
+              <input class="field-appointment-people" type="text" id="appointment-people" name="appointment-people" placeholder="1">
+            </p>
+</div>
+            <button class="button appointment-submit" type="submit">Найти</button>
+          </form>
+        </div>
+
+      </div>
     </div>
   </body>
 

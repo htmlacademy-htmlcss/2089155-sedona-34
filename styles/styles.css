@@ -485,6 +485,138 @@ body {
   fill: #756157;
 }
 
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 62px 70px 70px;
+  background-color: #ffffff;
+}
+
+.modal-search {
+  width: 715px;
+  border-radius: 30px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 56px;
+  right: 70px;
+  width: 53px;
+  height: 53px;
+  background: #F2F2F2;
+  border: none;
+  border-radius: 50%;
+  background-image: url("../image/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 63px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.field-group {
+  display: flex;
+  margin: 0;
+}
+
+.people {
+  display: flex;
+}
+
+.form-label {
+  font-family: 'PT Sans';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  align-items: center;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+
+.field-appointment {
+  width: 420px;
+  padding: 15px 19px;
+  padding-right: 50px;
+  margin-left: auto;
+  border: none;
+  border-radius: 4px;
+  background: #F2F2F2;
+  background-image: url("../image/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: right 17px center;
+}
+
+.field-appointment-people {
+  width: 133px;
+  padding: 15px 61px;
+  margin-right: 50px;
+  border: none;
+  border-radius: 4px;
+  background: #F2F2F2;
+  background-image: url("../image/minus.svg"),
+  url("../image/plus.svg");
+  background-repeat: no-repeat;
+  background-position: left 19px center, right 19px center;
+}
+
+.form-label-people {
+  margin-right: 60px;
+}
+
+.appointment-text {
+  margin: 0 0 11px 155px;
+  padding-top: 11px;
+  font-family: 'PT Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FF5757;
+}
+
+.appointment-next-text {
+  margin: 0 0 11px 155px;
+  padding-top: 11px;
+  font-family: 'PT Sans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.appointment-submit {
+  padding: 12px 26px;
+  margin-top: 40px;
+  width: 575px;
+  font-family: 'PT Sans';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  background: #83B3D3;
+}
+
 .inner-header {
   margin: 0;
   padding: 0 70px 70px;
