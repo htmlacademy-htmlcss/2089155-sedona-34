@@ -243,57 +243,153 @@
         </div>
       </footer>
 
-      <div class="modal-container">
+      <div class="modal-container modal-container-close">
         <div class="modal modal-search">
           <button class="modal-close-button">
             <span class="visually-hidden">Закрыть</span>
+            <svg class="modal-close-icon" width="15" height="14" viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.1143 1.29231L12.822 0L7.11426 5.70769L1.40657 0L0.114258 1.29231L5.82195 7L0.114258 12.7077L1.40657 14L7.11426 8.29231L12.822 14L14.1143 12.7077L8.40657 7L14.1143 1.29231Z" />
+            </svg>
           </button>
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           </section>
 
           <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-
             <p class="field-group appointment-form-date">
-                <label class="form-label" for="appointment-date">
-                  Дата Заезда:</label>
-              <input class="field-appointment" type="text" id="appointment-date" name="appointment-date" placeholder="27 апреля 2020">
-            </p>
-              <p class="appointment-text">Мы не можем отправить вас в прошлое.</p>
-
-            <p class="field-group appointment-form-date">
-                <label class="form-label" for="appointment-date">
-                  Дата Выезда:</label>
-              <input class="field-appointment" type="text" id="ppointment-date" name="ppointment-date" placeholder="1 сентября 2021">
-            </p>
-              <p class="appointment-next-text">На эти даты есть свободные номера. Пока есть. </p>
-
-              <div class="people">
-            <p class="field-group appointment-form-people">
-              <label class="form-label form-label-people" for="appointment-people">
-                Взрослые:
-              </label>
-              <input class="field-appointment-people" type="text" id="appointment-people" name="appointment-people" placeholder="2">
-            </p>
-
-            <p class="field-group appointment-form-people">
-              <span class="form-label form-label-icon">
-              <label class="form-label form-label-people-child" for="appointment-people">
-                Дети:
-              </label>
-              <span class="tooltip">
-                <button class="tooltip" type="button" aria-labelledby="tooltip-label">
-                  <svg class="tooltip-icon" width="3" height="12" viewBox="0 0 3 12" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.114258 0H2.11426V2H0.114258V0ZM2.11426 12H0.114258V3H2.11426V12Z"/>
-                    </svg>
+              <span class="appointment-date">
+                <button class="calendar" type="button" aria-labelledby="calendar-label">
+                  <svg class="calendar-icon" width="17" height="15" viewBox="0 0 17 15"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.86426 10C6.16426 10 6.36426 9.8 6.36426 9.5C6.36426 9.2 6.16426 9 5.86426 9C5.56426 9 5.36426 9.2 5.36426 9.5C5.36426 9.8 5.56426 10 5.86426 10Z" />
+                    <path
+                      d="M15.1143 2H13.1143V0H12.1143V2H4.11426V0H3.11426V2H1.11426C0.514258 2 0.114258 2.4 0.114258 3V14C0.114258 14.5 0.514258 15 1.11426 15H15.1143C15.6143 15 16.1143 14.5 16.1143 14V3C16.1143 2.4 15.6143 2 15.1143 2ZM15.1143 14H1.11426V7H15.1143V14ZM1.11426 6V3H3.11426V5H4.11426V3H12.1143V5H13.1143V3H15.1143V6H1.11426Z" />
+                    <path
+                      d="M8.11426 10C8.41426 10 8.61426 9.8 8.61426 9.5C8.61426 9.2 8.41426 9 8.11426 9C7.81426 9 7.61426 9.2 7.61426 9.5C7.61426 9.8 7.81426 10 8.11426 10Z" />
+                    <path
+                      d="M10.3643 10C10.6643 10 10.8643 9.8 10.8643 9.5C10.8643 9.2 10.6643 9 10.3643 9C10.0643 9 9.86426 9.2 9.86426 9.5C9.86426 9.8 10.0643 10 10.3643 10Z" />
+                    <path
+                      d="M5.86426 11C5.56426 11 5.36426 11.2 5.36426 11.5C5.36426 11.8 5.56426 12 5.86426 12C6.16426 12 6.36426 11.8 6.36426 11.5C6.36426 11.2 6.16426 11 5.86426 11Z" />
+                    <path
+                      d="M3.61426 10C3.91426 10 4.11426 9.8 4.11426 9.5C4.11426 9.2 3.91426 9 3.61426 9C3.31426 9 3.11426 9.2 3.11426 9.5C3.11426 9.8 3.31426 10 3.61426 10Z" />
+                    <path
+                      d="M3.61426 11C3.31426 11 3.11426 11.2 3.11426 11.5C3.11426 11.8 3.31426 12 3.61426 12C3.91426 12 4.11426 11.8 4.11426 11.5C4.11426 11.2 3.91426 11 3.61426 11Z" />
+                    <path
+                      d="M8.11426 11C7.81426 11 7.61426 11.2 7.61426 11.5C7.61426 11.8 7.81426 12 8.11426 12C8.41426 12 8.61426 11.8 8.61426 11.5C8.61426 11.2 8.41426 11 8.11426 11Z" />
+                    <path
+                      d="M10.3643 11C10.0643 11 9.86426 11.2 9.86426 11.5C9.86426 11.8 10.0643 12 10.3643 12C10.6643 12 10.8643 11.8 10.8643 11.5C10.8643 11.2 10.6643 11 10.3643 11Z" />
+                    <path
+                      d="M12.6143 10C12.9143 10 13.1143 9.8 13.1143 9.5C13.1143 9.2 12.9143 9 12.6143 9C12.3143 9 12.1143 9.2 12.1143 9.5C12.1143 9.8 12.3143 10 12.6143 10Z" />
+                    <path
+                      d="M12.6143 11C12.3143 11 12.1143 11.2 12.1143 11.5C12.1143 11.8 12.3143 12 12.6143 12C12.9143 12 13.1143 11.8 13.1143 11.5C13.1143 11.2 12.9143 11 12.6143 11Z" />
+                  </svg>
                 </button>
-                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                </span>
               </span>
-              </span>
-              <input class="field-appointment-people-child" type="text" id="appointment-people" name="appointment-people" placeholder="1">
+              <label class="form-label" for="appointment-date">
+                Дата Заезда:</label>
+              <input class="field-appointment" type="text" id="appointment-date" name="appointment-date"
+                placeholder="27 апреля 2020">
             </p>
-</div>
+            <p class="appointment-text">Мы не можем отправить вас в прошлое.</p>
+
+            <p class="field-group appointment-form-date">
+              <span class="appointment-date">
+                <button class="calendar" type="button" aria-labelledby="calendar-label">
+                  <svg class="calendar-icon" width="17" height="15" viewBox="0 0 17 15"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.86426 10C6.16426 10 6.36426 9.8 6.36426 9.5C6.36426 9.2 6.16426 9 5.86426 9C5.56426 9 5.36426 9.2 5.36426 9.5C5.36426 9.8 5.56426 10 5.86426 10Z" />
+                    <path
+                      d="M15.1143 2H13.1143V0H12.1143V2H4.11426V0H3.11426V2H1.11426C0.514258 2 0.114258 2.4 0.114258 3V14C0.114258 14.5 0.514258 15 1.11426 15H15.1143C15.6143 15 16.1143 14.5 16.1143 14V3C16.1143 2.4 15.6143 2 15.1143 2ZM15.1143 14H1.11426V7H15.1143V14ZM1.11426 6V3H3.11426V5H4.11426V3H12.1143V5H13.1143V3H15.1143V6H1.11426Z" />
+                    <path
+                      d="M8.11426 10C8.41426 10 8.61426 9.8 8.61426 9.5C8.61426 9.2 8.41426 9 8.11426 9C7.81426 9 7.61426 9.2 7.61426 9.5C7.61426 9.8 7.81426 10 8.11426 10Z" />
+                    <path
+                      d="M10.3643 10C10.6643 10 10.8643 9.8 10.8643 9.5C10.8643 9.2 10.6643 9 10.3643 9C10.0643 9 9.86426 9.2 9.86426 9.5C9.86426 9.8 10.0643 10 10.3643 10Z" />
+                    <path
+                      d="M5.86426 11C5.56426 11 5.36426 11.2 5.36426 11.5C5.36426 11.8 5.56426 12 5.86426 12C6.16426 12 6.36426 11.8 6.36426 11.5C6.36426 11.2 6.16426 11 5.86426 11Z" />
+                    <path
+                      d="M3.61426 10C3.91426 10 4.11426 9.8 4.11426 9.5C4.11426 9.2 3.91426 9 3.61426 9C3.31426 9 3.11426 9.2 3.11426 9.5C3.11426 9.8 3.31426 10 3.61426 10Z" />
+                    <path
+                      d="M3.61426 11C3.31426 11 3.11426 11.2 3.11426 11.5C3.11426 11.8 3.31426 12 3.61426 12C3.91426 12 4.11426 11.8 4.11426 11.5C4.11426 11.2 3.91426 11 3.61426 11Z" />
+                    <path
+                      d="M8.11426 11C7.81426 11 7.61426 11.2 7.61426 11.5C7.61426 11.8 7.81426 12 8.11426 12C8.41426 12 8.61426 11.8 8.61426 11.5C8.61426 11.2 8.41426 11 8.11426 11Z" />
+                    <path
+                      d="M10.3643 11C10.0643 11 9.86426 11.2 9.86426 11.5C9.86426 11.8 10.0643 12 10.3643 12C10.6643 12 10.8643 11.8 10.8643 11.5C10.8643 11.2 10.6643 11 10.3643 11Z" />
+                    <path
+                      d="M12.6143 10C12.9143 10 13.1143 9.8 13.1143 9.5C13.1143 9.2 12.9143 9 12.6143 9C12.3143 9 12.1143 9.2 12.1143 9.5C12.1143 9.8 12.3143 10 12.6143 10Z" />
+                    <path
+                      d="M12.6143 11C12.3143 11 12.1143 11.2 12.1143 11.5C12.1143 11.8 12.3143 12 12.6143 12C12.9143 12 13.1143 11.8 13.1143 11.5C13.1143 11.2 12.9143 11 12.6143 11Z" />
+                  </svg>
+                </button>
+              </span>
+              <label class="form-label" for="appointment-date">
+                Дата Выезда:</label>
+              <input class="field-appointment" type="text" id="ppointment-date" name="ppointment-date"
+                placeholder="1 сентября 2021">
+            </p>
+            <p class="appointment-next-text">На эти даты есть свободные номера. Пока есть. </p>
+
+            <div class="people">
+              <p class="field-group appointment-form-people">
+                <span class="appointment-people">
+                  <button class="people-minus" type="button" aria-labelledby="people-minus">
+                    <svg class="people-minus-icon" width="15" height="2" viewBox="0 0 15 2"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.114258 0L0.114258 2L14.1143 2V0L0.114258 0Z" />
+                    </svg>
+                  </button>
+                  <button class="people-plus" type="button" aria-labelledby="people-plus">
+                    <svg class="people-plus-icon" width="14" height="14" viewBox="0 0 14 14"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                    </svg>
+                  </button>
+                </span>
+                <label class="form-label form-label-people" for="appointment-people">
+                  Взрослые:
+                </label>
+                <input class="field-appointment-people" type="text" id="appointment-people" name="appointment-people"
+                  placeholder="2">
+              </p>
+
+              <p class="field-group appointment-form-people">
+                <span class="form-label form-label-icon">
+                  <span class="appointment-people-child">
+                    <button class="child-minus" type="button" aria-labelledby="child-minus">
+                      <svg class="child-minus-icon" width="15" height="2" viewBox="0 0 15 2"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.114258 0L0.114258 2L14.1143 2V0L0.114258 0Z" />
+                      </svg>
+                    </button>
+                    <button class="child-plus" type="button" aria-labelledby="child-plus">
+                      <svg class="child-plus-icon" width="14" height="14" viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                      </svg>
+                    </button>
+                  </span>
+                  <label class="form-label form-label-people-child" for="appointment-people">
+                    Дети:
+                  </label>
+                  <span class="tooltip">
+                    <button class="tooltip-groop" type="button" aria-labelledby="tooltip-label">
+                      <svg class="tooltip-icon" width="3" height="12" viewBox="0 0 3 12"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0.114258 0H2.11426V2H0.114258V0ZM2.11426 12H0.114258V3H2.11426V12Z" />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут
+                      с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                    </span>
+                  </span>
+                </span>
+                <input class="field-appointment-people-child" type="text" id="appointment-people"
+                  name="appointment-people" placeholder="1">
+              </p>
+            </div>
             <button class="button appointment-submit" type="submit">Найти</button>
           </form>
         </div>

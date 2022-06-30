@@ -378,6 +378,7 @@ body {
   background: #82B3D3;
   border-radius: 0 10px 10px 0;
   border: none;
+  cursor: pointer;
 }
 
 .newsletter-button:hover {
@@ -517,9 +518,6 @@ body {
   background: #F2F2F2;
   border: none;
   border-radius: 50%;
-  background-image: url("../image/cross.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   cursor: pointer;
 }
 
@@ -528,6 +526,7 @@ body {
 }
 
 .modal-close-button:active {
+  opacity: 0.3;
   background: #E6E6E6;
 }
 
@@ -575,18 +574,39 @@ body {
   width: 420px;
   padding: 15px 19px;
   padding-right: 50px;
+  font-family: "PT Sans";
   margin-left: auto;
   border: none;
   border-radius: 4px;
   background: #F2F2F2;
-  background-image: url("../image/calendar.svg");
-  background-repeat: no-repeat;
-  background-position: right 17px center;
+}
+
+.appointment-date {
+  position: relative;
+}
+
+.calendar {
+  position: absolute;
+  margin-top: 12px;
+  margin-left: 535px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.calendar-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  opacity: 0.6;
 }
 
 .field-appointment:hover {
-  color: #000000;
-  opacity: 0.6;
   background: #E6E6E6;
 }
 
@@ -604,35 +624,160 @@ body {
   border: 3px solid #83B3D3;
 }
 
-
 .field-appointment-people {
   width: 133px;
   padding: 15px 61px;
   margin-right: 50px;
+  font-family: "PT Sans";
   border: none;
   border-radius: 4px;
+  color: #000000;
   background: #F2F2F2;
-  background-image: url("../image/minus.svg"),
-  url("../image/plus.svg");
-  background-repeat: no-repeat;
-  background-position: left 19px center, right 19px center;
+}
+
+.appointment-people {
+  position: relative;
+}
+
+.people-minus {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 165px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.people-minus-icon {
+  margin-bottom: 4px;
+  margin-left: -3px;
+  fill: #000000;
+  opacity: 0.6;
+}
+
+.people-minus:hover {
+  fill: #000000;
+}
+
+.people-minus:active {
+  opacity: 0.2;
+}
+
+.people-minus:focus {
+  fill: #000000;
+  border: 3px solid #83B3D3;
+}
+
+.people-plus {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 246px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.people-plus-icon {
+  margin-top: 2px;
+  margin-left: -3px;
+  fill: #000000;
+  opacity: 0.6;
+}
+
+.people-plus:hover {
+  fill: #000000;
+}
+
+.people-plus:active {
+  opacity: 0.2;
+}
+
+.people-plus:focus {
+  fill: #000000;
+  border: 3px solid #83B3D3;
 }
 
 .field-appointment-people-child {
   width: 133px;
   padding: 15px 61px;
-  margin-left: 45px;
+  margin-left: 42px;
+  font-family: "PT Sans";
   border: none;
   border-radius: 4px;
+  color: #000000;
   background: #F2F2F2;
-  background-image: url("../image/minus.svg"),
-  url("../image/plus.svg");
-  background-repeat: no-repeat;
-  background-position: left 19px center, right 19px center;
+}
+
+.appointment-people-child {
+  position: relative;
+}
+
+.child-minus {
+  position: absolute;
+  margin-left: 123px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.child-minus-icon {
+  margin-bottom: 4px;
+  margin-left: -3px;
+  fill: #000000;
+  opacity: 0.6;
+}
+
+.child-minus:hover {
+  fill: #000000;
+}
+
+.child-minus:active {
+  opacity: 0.2;
+}
+
+.child-minus:focus {
+  fill: #000000;
+  border: 3px solid #83B3D3;
+}
+
+.child-plus {
+  position: absolute;
+  margin-left: 206px;
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.child-plus-icon {
+  margin-top: 2px;
+  margin-left: -3px;
+  fill: #000000;
+  opacity: 0.6;
+}
+
+.child-plus:hover {
+  fill: #000000;
+}
+
+.child-plus:active {
+  opacity: 0.2;
+}
+
+.child-plus:focus {
+  fill: #000000;
+  border: 3px solid #83B3D3;
 }
 
 .form-label-people {
-  margin-right: 60px;
+  margin-right: 62px;
 }
 
 .appointment-text {
@@ -684,32 +829,30 @@ body {
   border: 3px solid #756257;
 }
 
-.modal-container-close {
-  display: none;
-}
-
-.tooltip {
+.tooltip-groop {
   position: absolute;
+  margin-top: 2px;
   margin-left: 4px;
   width: 25px;
   height: 25px;
   background: #83B3D3;
   border: none;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .tooltip-icon {
   margin-bottom: 1px;
-  margin-left: 3px;
+  margin-left: 5px;
   fill: #FFFFFF;
   display: block;
 }
 
-.tooltip:hover .tooltip-icon {
+.tooltip-groop:hover .tooltip-icon {
   background: #68A2CA;
 }
 
-.tooltip:active {
+.tooltip-groop:active {
   background: #68A2CA;
 }
 
@@ -725,29 +868,33 @@ body {
   width: 216px;
   position: absolute;
   top: 100%;
-  margin-top: 12px;
-  left: 50%;
+  margin-top: 6px;
+  left: 100%;
   transform: translateX(-50%);
   z-index: 1;
   display: none;
 }
 
-.tooltip:hover + .tooltip-text,
-.tooltip:focus + .tooltip-text {
+.tooltip-groop:hover + .tooltip-text,
+.tooltip-groop:focus + .tooltip-text {
   display: block;
 }
 
 .tooltip-text:after {
-  content:'';
+  content: '';
   background-image: url("../image/arrow-tooltip.svg");
   width: 19px;
   height: 9px;
-  position:absolute;
+  position: absolute;
   bottom: 100%;
-  left: 4px;
-  right:0;
+  left: 2px;
+  right: 0;
   margin-left: auto;
   margin-right: auto;
+}
+
+.modal-container-close {
+  display: none;
 }
 
 .inner-header {
@@ -800,6 +947,34 @@ body {
   margin-right: 25px;
 }
 
+.breadcrumbs-link-icon {
+  color: #FFFFFF;
+}
+
+.breadcrumbs-link-icon:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link-icon:active {
+  color: #FFFFFF;
+}
+
+.breadcrumbs-link-icon:focus {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:active {
+  color: #FFFFFF;
+}
+
+.breadcrumbs-link:focus {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .index-catalog {
   display: flex;
   padding: 0;
@@ -830,6 +1005,7 @@ body {
   position: relative;
   display: block;
   padding-left: 39px;
+  cursor: pointer;
 }
 
 .control-mark {
@@ -885,8 +1061,8 @@ body {
   position: absolute;
   top: 5px;
   left: 5px;
-  width: 9px;
-  height: 9px;
+  width: 10px;
+  height: 10px;
   background: #3F5E72;
   border-radius: 50%;
   content: "";
@@ -912,12 +1088,76 @@ body {
   margin-bottom: 15px;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: 143px 143px;
+  position: relative;
+}
+
+.form-label-windows {
+  position: absolute;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: lowercase;
+  opacity: 0.3;
+}
+
+.form-input {
+  padding: 14px 50px 13px 19px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  background: none;
+  border: 2px solid #FFFFFF;
+  cursor: pointer;
+}
+
+.form-input::-webkit-outer-spin-button,
+.form-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.form-input:active {
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 0 0 3px #81B3D2;
+}
+
+.form-input:focus {
+  background: #756257;
+  border: 2px solid #FFFFFF;
+}
+
+.form-input-on {
+  border-radius: 4px 0 0 4px;
+}
+
+.form-input-to {
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.form-label-on {
+  margin-top: 14px;
+  margin-left: 105px;
+}
+
+.form-label-to {
+  margin-top: 14px;
+  margin-left: 245px;
+}
+
 .range-scale {
   position: relative;
   height: 4px;
   margin-top: 32px;
-  background-color: #FFFFFF;
-  /* opacity: 0.3; */
+  background-color: #B1B6B8;
   width: 287px;
 }
 
@@ -966,13 +1206,14 @@ body {
 }
 
 .catalog-button {
- margin-left: 70px;
+  margin-left: 70px;
 }
 
 .button-filter {
   min-width: 160px;
   color: #FFFFFF;
   background: #82B3D3;
+  cursor: pointer;
 }
 
 .button-filter:hover {
@@ -998,6 +1239,7 @@ body {
   background: none;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
 .button-2:hover {
@@ -1103,6 +1345,7 @@ body {
   background-repeat: no-repeat;
   background-position: right 20px center;
   appearance: none;
+  cursor: pointer;
 }
 
 .select-control:hover,
@@ -1312,6 +1555,7 @@ body {
   background-repeat: no-repeat;
   background-position: right 20px center;
   appearance: none;
+  cursor: pointer;
 }
 
 .select-pagination:hover,
