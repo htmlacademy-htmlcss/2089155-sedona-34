@@ -78,7 +78,12 @@ body {
 
 .navigation-user {
   max-width: 350px;
-  margin-left: auto;
+  margin-right: -14px;
+}
+
+.navigation-link-user {
+  display: block;
+  padding: 20px 12px;
 }
 
 .navigation-icon {
@@ -87,7 +92,7 @@ body {
 
 .navigation-icon-favorite {
   position: absolute;
-  margin: -5px 0 0 -5px;
+  margin: -5px 0 0 -7px;
 }
 
 .navigation-link {
@@ -101,6 +106,19 @@ body {
   text-align: center;
   font-weight: 700;
   color: #242424;
+}
+
+.navigation-link:hover {
+  background: #E6E6E6;
+}
+
+.navigation-link:focus {
+  background: #B1B6B8
+}
+
+.navigation-link:active {
+  opacity: 0.6;
+  background: #E6E6E6;
 }
 
 .navigation-link-current::before {
@@ -121,12 +139,13 @@ body {
 .navigation-user .button {
   padding: 9px 15px;
   margin: 13px 20px;
-  min-width: 130px;
+  max-width: 130px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #756157;
+  text-decoration: none;
 }
 
 .navigation-user .button:hover {
@@ -154,17 +173,17 @@ body {
     url("../image/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-position: top 425px center, top center;
+  background-position: top 427px center, top center;
 }
 
 .content-image {
   display: block;
   margin: 0 auto;
-  margin-bottom: 80px;
+  margin-bottom: 82px;
 }
 
 .index-text {
-  padding-top: 62px;
+  padding-top: 63px;
   padding-bottom: 90px;
   text-align: center;
   background-color: #FFFFFF;
@@ -177,7 +196,7 @@ body {
 
 .content-text-big {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -214,12 +233,13 @@ body {
 }
 
 .advantages-title-second {
-  margin-top: 102px;
+  margin-top: 103px;
   color: #242424;
 }
 
 .advantages-title-third {
-  margin-top: 182px;
+  margin-top: 183px;
+  margin-bottom: 30px;
   color: #242424;
 }
 
@@ -231,14 +251,14 @@ body {
 }
 
 .advantages-description {
-  margin: 0 84px;
+  margin: 0 85px;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
 }
 
 .advantages-description-second {
-  margin: 0 84px;
+  margin: 0 85px;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
@@ -280,7 +300,7 @@ body {
 }
 
 .advantages-hotel {
-  padding: 92px 304px;
+  padding: 90px 304px 93px;
   margin: 0;
   text-align: center;
 }
@@ -295,13 +315,14 @@ body {
 }
 
 .advantages-description-registration {
-  margin: 0;
   margin-bottom: 56px;
   color: #333333;
 }
 
 .advantages-link {
   display: block;
+  width: 574px;
+  margin-left: 9px;
   padding: 12px 16px;
   font-weight: 700;
   font-size: 20px;
@@ -339,7 +360,7 @@ body {
 
 .newsletter-title {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -347,8 +368,7 @@ body {
 }
 
 .newsletter-content {
-  margin: 0;
-  margin-bottom: 46px;
+  margin: 0 0 46px 2px;
 }
 
 .field {
@@ -364,7 +384,7 @@ body {
 
 .newsletter-form {
   display: flex;
-  width: 800px;
+  width: 100%;
 }
 
 .newsletter-button {
@@ -403,7 +423,7 @@ body {
 .page-footer-container {
   display: flex;
   justify-content: space-between;
-  padding: 40px 70px 30px;
+  padding: 44px 70px 30px;
   margin: 0;
 }
 
@@ -472,6 +492,7 @@ body {
 
 .footer-logo {
   width: 115px;
+  margin: 5px 0;
 }
 
 .footer-logo-icon:hover {
@@ -899,7 +920,7 @@ body {
 
 .inner-header {
   margin: 0;
-  padding: 0 70px 70px;
+  padding: 35px 70px 70px 71px;
   color: #ffffff;
   background-color: #000000;
   background-image: url("../image/background-2.jpg");
@@ -910,8 +931,8 @@ body {
 .inner-header-title {
   margin-top: 0;
   margin-bottom: 10px;
-  padding-top: 36px;
-  padding-bottom: 10px;
+  padding-top: 26px;
+  padding-bottom: 20px;
   font-weight: 700;
   font-size: 60px;
 }
@@ -998,13 +1019,13 @@ body {
   font-size: 20px;
   line-height: 26px;
   text-transform: capitalize;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .control {
   position: relative;
   display: block;
-  padding-left: 39px;
+  padding-left: 43px;
   cursor: pointer;
 }
 
@@ -1066,6 +1087,10 @@ body {
   background: #3F5E72;
   border-radius: 50%;
   content: "";
+}
+
+.control-mark-radio {
+  left: 3px;
 }
 
 .control-label {
