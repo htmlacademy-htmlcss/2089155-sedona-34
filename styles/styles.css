@@ -330,7 +330,7 @@ body {
 
 .advantages-link {
   display: block;
-  min-width: 574px;
+  max-width: 574px;
   margin-left: 9px;
   padding: 12px 16px;
   font-weight: 700;
@@ -611,6 +611,10 @@ body {
   padding: 15px 19px;
   padding-right: 50px;
   font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
   margin-left: auto;
   /* border: none; */
   outline: auto;
@@ -625,7 +629,7 @@ body {
 .calendar {
   position: absolute;
   top: 13px;
-  right: 14px;
+  right: 16px;
   width: 20px;
   height: 20px;
   border: none;
@@ -658,7 +662,7 @@ body {
   color: #000000;
   opacity: 0.6;
   background: #E6E6E6;
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .field-appointment-people {
@@ -666,6 +670,9 @@ body {
   padding: 15px 61px;
   margin-right: 58px;
   font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
   border: none;
   border-radius: 4px;
   color: #000000;
@@ -743,6 +750,9 @@ body {
   padding: 15px 61px;
   margin-left: 33px;
   font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
   border: none;
   border-radius: 4px;
   color: #000000;
@@ -821,7 +831,7 @@ body {
 
 .appointment-text {
   margin: 0 0 11px 155px;
-  padding-top: 6px;
+  padding-top: 4px;
   font-family: 'PT Sans';
   font-weight: 400;
   font-size: 16px;
@@ -831,7 +841,7 @@ body {
 
 .appointment-next-text {
   margin: 0 0 11px 155px;
-  padding-top: 6px;
+  padding-top: 4px;
   font-family: 'PT Sans';
   font-weight: 400;
   font-size: 16px;
@@ -907,7 +917,7 @@ body {
   width: 256px;
   position: absolute;
   top: 100%;
-  margin-top: 6px;
+  margin-top: 4px;
   margin-left: 3px;
   left: 100%;
   transform: translateX(-50%);
@@ -1031,7 +1041,7 @@ body {
 
 .catalog-filter-group-price {
   margin: 0;
-  margin-left: 104px;
+  margin-left: 108px;
 }
 
 .catalog-filter-title {
@@ -1039,19 +1049,19 @@ body {
   font-size: 20px;
   line-height: 26px;
   text-transform: capitalize;
-  margin-bottom: 26px;
+  margin-bottom: 27px;
 }
 
 .control {
   position: relative;
   display: block;
-  padding-left: 43px;
+  padding-left: 40px;
   cursor: pointer;
 }
 
 .control-mark {
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 0;
   width: 20px;
   height: 20px;
@@ -1114,6 +1124,7 @@ body {
 }
 
 .control-label {
+  font-family: 'PT Sans';
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -1130,7 +1141,7 @@ body {
 }
 
 .catalog-filter-item:not(:last-child) {
-  margin-bottom: 13px;
+  margin-bottom: 10px;
 }
 
 .wrapper {
@@ -1151,8 +1162,8 @@ body {
 }
 
 .form-input {
-  margin-top: -2px;
-  padding: 13px 50px 12px 18px;
+  margin-top:-1px;
+  padding: 12px 50px 11px 18px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
@@ -1202,7 +1213,7 @@ body {
 .range-scale {
   position: relative;
   height: 4px;
-  margin-top: 32px;
+  margin-top: 28px;
   background-color: #B1B6B8;
   width: 287px;
 }
@@ -1257,6 +1268,9 @@ body {
 
 .button-filter {
   min-width: 160px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
   color: #FFFFFF;
   background: #82B3D3;
   cursor: pointer;
@@ -1276,7 +1290,7 @@ body {
 }
 
 .button-2 {
-  padding: 40px 47px 0 48px;
+  padding: 24px 47px 0 48px;
   max-width: 160px;
   font-size: 16px;
   line-height: 20px;
@@ -1306,8 +1320,6 @@ body {
   padding: 12px 15px;
   font-family: inherit;
   font-weight: 700;
-  /* font-size: 16px;
-  line-height: 20px; */
   align-items: center;
   text-align: center;
   text-transform: uppercase;
@@ -1318,6 +1330,8 @@ body {
 
 .button-1 {
   padding: 9px 15px;
+  font-size: 16px;
+  line-height: 20px;
   min-width: 110px;
   color: #FFFFFF;
   background: #82B3D3;
@@ -1342,7 +1356,7 @@ body {
 }
 
 .product-list {
-  margin: 0 72px;
+  margin: 30px 72px 0;
   padding: 0;
 }
 
@@ -1359,12 +1373,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  margin: 58px 72px;
+  margin: 57px 72px;
 }
 
 .select-control-title {
-  margin: 0;
-  margin-right: 190px;
+  margin: 2px 190px 0 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -1376,6 +1389,7 @@ body {
   display: flex;
   align-items: center;
   width: 290px;
+  margin-top: -7px;
   margin-right: auto;
 }
 
@@ -1390,7 +1404,7 @@ body {
   border-radius: 4px;
   background-image: url("../image/down-arrow.svg");
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 15px center;
   appearance: none;
   cursor: pointer;
 }
@@ -1415,6 +1429,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #FFFFFF;
+  margin-top: -5px;
   width: 48px;
   height: 48px;
   border: 2px solid #E5E5E5;
@@ -1441,17 +1456,17 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 20px;
+  margin: 21px 21px;
 }
 
 .product-container {
   display: grid;
   grid-template-columns: 140px 140px;
-  gap: 20px 16px;
+  gap: 15px 20px;
 }
 
 .product-card-title {
-  margin: 16px 0;
+  margin: 10px 0 15px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -1471,6 +1486,8 @@ body {
 
 .product-card-button {
   padding: 9px 15px;
+  font-size: 16px;
+  line-height: 20px;
   min-width: 110px;
   color: #FFFFFF;
   background: #756157;
@@ -1492,6 +1509,9 @@ body {
 
 .button-3 {
   padding: 9px 15px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
   min-width: 110px;
   color: #FFFFFF;
   background: #7DB54F;
@@ -1542,7 +1562,7 @@ body {
 .pagination-container {
   display: flex;
   margin: 0;
-  padding: 30px 0 24px;
+  padding: 32px 0 17px;
   align-items: center;
 }
 
@@ -1609,7 +1629,7 @@ body {
 }
 
 .pagination-about-text {
-  padding: 8px;
+  padding: 0 0 4px 0;
   margin-left: auto;
   font-size: 18px;
   color: #333333;
@@ -1617,6 +1637,7 @@ body {
 
 .select-pagination {
   margin-left: 50px;
+  margin-bottom: 6px;
   min-height: 49px;
   min-width: 160px;
   padding: 14px 20px;
