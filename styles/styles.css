@@ -86,7 +86,7 @@ body {
 
 .navigation-user {
   max-width: 350px;
-  margin-right: -14px;
+  margin: 0 0 0 auto;
 }
 
 .navigation-link-user {
