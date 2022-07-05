@@ -87,14 +87,9 @@ body {
   padding: 20px 12px;
 }
 
-.navigation-icon {
+/* .navigation-icon {
   position: relative;
-}
-
-.navigation-icon-favorite {
-  position: absolute;
-  margin: -5px 0 0 -7px;
-}
+} */
 
 .navigation-link {
   position: relative;
@@ -175,16 +170,20 @@ body {
   background-color: #615048;
 }
 
+.navigation-link-user-favorite {
+  position: relative;
+}
+
 .number-of-hotels {
-  display: block;
+  display: flex;
+  justify-content: center;
   position: absolute;
   top: 14px;
-  right: 249px;
+  right: 0;
   width: 20px;
   height: 20px;
   font-size: 10px;
   line-height: 19px;
-  text-align: center;
   color: #ffffff;
   background: #7DB54F;
   border-radius: 50%;
@@ -645,7 +644,7 @@ body {
   width: 420px;
   padding: 15px 19px;
   padding-right: 50px;
-  font-weight: 700;
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 20px;
   color: #000000;
@@ -701,7 +700,7 @@ body {
 .field-appointment-people {
   width: 133px;
   padding: 15px 61px;
-  font-weight: 700;
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 20px;
   border: none;
@@ -781,8 +780,7 @@ body {
 .field-appointment-people-child {
   width: 133px;
   padding: 15px 61px;
-  margin-left: 33px;
-  font-weight: 700;
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 20px;
   border: none;
@@ -793,6 +791,7 @@ body {
 
 .appointment-people-child {
   position: relative;
+  margin-left: 4px;
 }
 
 .child-minus {
@@ -809,7 +808,7 @@ body {
 
 .child-minus-icon {
   margin-bottom: 4px;
-  margin-left: -3px;
+  margin-left: -65px;
   fill: #000000;
   opacity: 0.6;
 }
@@ -830,7 +829,7 @@ body {
 .child-plus {
   position: absolute;
   top: 12px;
-  left: 129px;
+  left: 95px;
   width: 25px;
   height: 25px;
   border: none;
@@ -916,9 +915,8 @@ body {
 }
 
 .tooltip-groop {
-  position: absolute;
   top: 3px;
-  left: 54px;
+  left: 0;
   width: 25px;
   height: 25px;
   background: #83b3d3;
@@ -928,10 +926,9 @@ body {
 }
 
 .tooltip-icon {
-  margin-bottom: 1px;
-  margin-left: 5px;
+  display: inline-flex;
+  justify-content: center;
   fill: #ffffff;
-  display: block;
 }
 
 .tooltip-groop:hover .tooltip-icon {
@@ -955,7 +952,7 @@ body {
   position: absolute;
   top: 100%;
   margin-top: 4px;
-  margin-left: 2px;
+  margin-left: -27px;
   left: 100%;
   transform: translateX(-50%);
   z-index: 1;
