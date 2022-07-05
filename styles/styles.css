@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: > 2% and last 1 version
-*/
-
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -85,7 +78,7 @@ body {
 }
 
 .navigation-user {
-  max-width: 350px;
+  max-width: 336px;
   margin: 0 0 0 auto;
 }
 
@@ -211,7 +204,6 @@ body {
 
 .content-text {
   margin: 0;
-
   color: #333333;
 }
 
@@ -405,7 +397,6 @@ body {
   margin: 0;
   padding: 20px 22px;
   font: inherit;
-  font-weight: 700;
   font-size: 18px;
   line-height: 21px;
   align-items: center;
@@ -422,8 +413,10 @@ body {
 .newsletter-button {
   min-width: 200px;
   padding: 12px 15px;
+  font-family: "PT Sans";
   font-weight: 700;
   font-size: 20px;
+  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   background: #82b3d3;
@@ -496,7 +489,7 @@ body {
 }
 
 .footer-contacts-address {
-  max-width: 331px;
+  min-width: 331px;
 }
 
 .footer-contacts-address-phone {
@@ -608,6 +601,7 @@ body {
 }
 
 .form-label {
+  display: inline-block;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -837,12 +831,18 @@ body {
 }
 
 .form-label-people {
-  margin-right: 62px;
+  display: inline-block;
+  width: 133px;
+  margin-right: 20px;
+}
+
+.form-label-people-child{
+  margin-top: -10px;
 }
 
 .appointment-text {
   margin: 0 0 11px 155px;
-  padding-top: 4px;
+  padding-top: 8px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -851,7 +851,7 @@ body {
 
 .appointment-next-text {
   margin: 0 0 11px 155px;
-  padding-top: 4px;
+  padding-top: 8px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -926,7 +926,7 @@ body {
   position: absolute;
   top: 100%;
   margin-top: 4px;
-  margin-left: 3px;
+  margin-left: 5px;
   left: 100%;
   transform: translateX(-50%);
   z-index: 1;
@@ -1323,7 +1323,7 @@ body {
 }
 
 .button-1 {
-  padding: 9px 15px;
+  padding: 9px 11px;
   font-size: 16px;
   line-height: 20px;
   min-width: 110px;
@@ -1478,7 +1478,7 @@ body {
 }
 
 .product-card-button {
-  padding: 9px 15px;
+  padding: 9px 14px;
   font-size: 16px;
   line-height: 20px;
   min-width: 110px;
@@ -1501,7 +1501,7 @@ body {
 }
 
 .button-3 {
-  padding: 9px 15px;
+  padding: 9px 10px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1543,9 +1543,10 @@ body {
 
 .product-card-raiting {
   margin: 0;
-  padding: 8px 22px;
+  padding: 8px 17px;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
   color: #333333;
   background: #f2f2f2;
