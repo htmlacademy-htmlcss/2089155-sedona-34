@@ -917,8 +917,8 @@ body {
 
 .tooltip-groop {
   position: absolute;
-  margin-top: 4px;
-  margin-left: 6px;
+  top: 3px;
+  left: 54px;
   width: 25px;
   height: 25px;
   background: #83b3d3;
@@ -955,7 +955,7 @@ body {
   position: absolute;
   top: 100%;
   margin-top: 4px;
-  margin-left: 5px;
+  margin-left: 2px;
   left: 100%;
   transform: translateX(-50%);
   z-index: 1;
@@ -1111,15 +1111,15 @@ body {
   outline: 3px solid #83b3d3;
 }
 
-.control-input:hover .control-mark {
+.control-input:hover ~ .control-mark {
   background: rgba(255, 255, 255, 0.6);
 }
 
-.control-input:active .control-mark {
+.control-input:active ~ .control-mark {
   background: rgba(255, 255, 255, 0.6);
 }
 
-.control-input:disabled + .control-mark {
+.control-input:disabled ~ .control-mark {
   border-color: #242424;
 }
 
@@ -1202,6 +1202,12 @@ body {
   -webkit-appearance: none;
   margin: 0;
 }
+
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance:none;
+   -moz-appearance:textfield;}
 
 .form-input:active {
   background: #756257;
@@ -1314,7 +1320,8 @@ body {
 .button-2 {
   margin: 3px;
   padding: 21px 37px 0 47px;
-  min-width: 160px;
+  min-width: 155px;
+  font-family: "PT Sans";
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -1428,6 +1435,7 @@ body {
   background-image: url("../image/down-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 15px center;
+  background-color: #ffffff;
   appearance: none;
   cursor: pointer;
 }
@@ -1667,6 +1675,7 @@ body {
   background-image: url("../image/down-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 17px center;
+  background-color: #ffffff;
   appearance: none;
   cursor: pointer;
 }
