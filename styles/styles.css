@@ -175,6 +175,21 @@ body {
   background-color: #615048;
 }
 
+.number-of-hotels {
+  display: block;
+  position: absolute;
+  top: 14px;
+  right: 249px;
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+  background: #7DB54F;
+  border-radius: 50%;
+}
+
 .main-container {
   flex-grow: 1;
   padding-top: 50px;
@@ -237,6 +252,16 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.advantages-hotel-1 {
+  height: auto;
+  object-fit: cover;
+}
+
+.advantages-bridge {
+  height: auto;
+  object-fit: cover;
 }
 
 .advantages-title-first {
@@ -374,7 +399,7 @@ body {
   background-image: url("../image/background-1.jpg");
   color: #ffffff;
   background-color: #000000;
-  background-size: 100% auto;
+  background-size:cover;
   background-repeat: no-repeat;
   text-align: center;
 }
@@ -598,6 +623,7 @@ body {
 
 .people {
   display: flex;
+  justify-content: space-between;
 }
 
 .form-label {
@@ -675,7 +701,6 @@ body {
 .field-appointment-people {
   width: 133px;
   padding: 15px 61px;
-  margin-right: 58px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -697,6 +722,7 @@ body {
   height: 25px;
   border: none;
   border-radius: 4px;
+  background: none;
   cursor: pointer;
 }
 
@@ -723,11 +749,12 @@ body {
 .people-plus {
   position: absolute;
   top: 12px;
-  right: 67px;
+  right: 12px;
   width: 25px;
   height: 25px;
   border: none;
   border-radius: 4px;
+  background: none;
   cursor: pointer;
 }
 
@@ -776,6 +803,7 @@ body {
   height: 25px;
   border: none;
   border-radius: 4px;
+  background: none;
   cursor: pointer;
 }
 
@@ -807,6 +835,7 @@ body {
   height: 25px;
   border: none;
   border-radius: 4px;
+  background: none;
   cursor: pointer;
 }
 
@@ -961,7 +990,7 @@ body {
   color: #ffffff;
   background-color: #000000;
   background-image: url("../image/background-2.jpg");
-  background-size: 100% auto;
+  background-size:cover;
   background-repeat: no-repeat;
 }
 
@@ -1170,7 +1199,7 @@ body {
 
 .form-input::-webkit-outer-spin-button,
 .form-input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
   margin: 0;
 }
 
@@ -1391,6 +1420,7 @@ body {
   width: 100%;
   padding: 14px 20px;
   padding-right: 50px;
+  font-family: "PT Sans";
   font-weight: 400;
   font-size: 18px;
   border: 2px solid #e5e5e5;
