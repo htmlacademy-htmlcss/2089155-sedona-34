@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./image/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -27,7 +27,7 @@
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item-1">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link-user" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="19"
                   viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -40,7 +40,7 @@
               </a>
             </li>
             <li class="navigation-item-1">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link-user navigation-link-user-favorite" href="#">
                 <svg class="navigation-icon" aria-hidden="true" focusable="false" width="19" height="17"
                   viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -50,20 +50,13 @@
                 <span class="visually-hidden">
                   Лайк
                 </span>
-                <svg class="navigation-icon-favorite navigation-icon" aria-hidden="true" focusable="false" width="21"
-                  height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect x=".13" width="20" height="20" rx="10" fill="#7DB54F" />
-                  <path
-                    d="M6.26 11.76h1.4V6.92l.1-.59-.4.47-1.1.79-.38-.51 2.2-1.7h.36v6.38h1.37v.74H6.26v-.74Zm7.83-4.67c0 .35-.06.72-.2 1.09-.12.37-.3.74-.5 1.11-.21.37-.45.74-.7 1.1l-.79 1.01-.49.43v.04l.64-.11h2.18v.74h-3.98v-.29a32.75 32.75 0 0 0 1.17-1.32 15.09 15.09 0 0 0 1.25-1.83c.18-.32.33-.64.43-.95.11-.31.16-.61.16-.89 0-.33-.09-.6-.28-.81-.18-.22-.47-.33-.85-.33-.25 0-.5.05-.74.16-.24.1-.44.22-.62.35l-.33-.57c.24-.2.51-.36.83-.47.32-.11.67-.17 1.03-.17.29 0 .54.04.76.13a1.5 1.5 0 0 1 .91.9c.08.2.12.43.12.68Z"
-                    fill="#fff" />
-                </svg>
-                <span class="number of hotels visually-hidden">
+                <span class="number-of-hotels">
                   12
                 </span>
               </a>
             </li>
             <li class="navigation-item-1">
-              <a class="navigation-link button">Хочу сюда!</a>
+              <a class="navigation-link-user button" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -87,7 +80,7 @@
             <li class="advantages-item-1">
               <div class="advantages-item">
                 <h3 class="advantages-title-first advantages-title">Настоящий<br> городок</h3>
-                <p class="advantages-number">-№1-</p>
+                <p class="advantages-number">– №1 –</p>
                 <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img class="advantages-hotel-1" src="image\real-town.jpg" width="800" height="384"
@@ -117,27 +110,27 @@
               <img class="advantages-bridge" src="image\devil's-bridge.jpg" width="800" height="384" alt="Мост дьявола">
               <div class="advantages-item">
                 <h3 class="advantages-title-first advantages-title">Там есть<br> мост дьявола</h3>
-                <p class="advantages-number">-№2-</p>
+                <p class="advantages-number">– №2 –</p>
                 <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
             </li>
 
             <li class="advantages-item-2 advantages-item">
               <h3 class="advantages-title-second advantages-title">Небольшая<br> площадь</h3>
-              <p class="advantages-number">-№3-</p>
-              <p class="advantages-description-second">Все достопримечательности находятся очень близко</p>
+              <p class="advantages-number">– №3 –</p>
+              <p class="advantages-description-third">Все достопримечательности находятся очень близко</p>
             </li>
 
             <li class="advantages-item-3 advantages-item">
               <h3 class="advantages-title-second advantages-title">Красивая<br> дорога</h3>
-              <p class="advantages-number">-№4-</p>
-              <p class="advantages-description-second">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <p class="advantages-number">– №4 –</p>
+              <p class="advantages-description-third">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
 
             <li class="advantages-item-2 advantages-item">
               <h3 class="advantages-title-second advantages-title">Мало<br> туристов</h3>
-              <p class="advantages-number">-№5-</p>
-              <p class="advantages-description-second">Большинство едет в Гранд Каньон и толпится там</p>
+              <p class="advantages-number">– №5 –</p>
+              <p class="advantages-description-third">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
           </ol>
         </section>
@@ -145,20 +138,19 @@
         <section class="advantages-hotel">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
           <h3 class="advantages-title-registration">Заинтересовались?</h3>
-          <p class="advantages-description-registration">Укажите предполагаемые даты поездки,<br> и мы покажем вам
-            лучшие
-            предложения гостиниц в Седоне</p>
-          <a class="advantages-link button-4">Поиск гостиницы в седоне</a>
+          <p class="advantages-description-registration">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие
+            предложения гостиниц в Седоне&nbsp&nbsp</p>
+          <a class="advantages-link button-4" href="#">Поиск гостиницы в седоне</a>
         </section>
 
         <section class="newsletter-1">
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
           <p class="newsletter-content">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="newsletter-email">Email</label>
+            <label for="newsletter-email"><span class="visually-hidden">Email</span></label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
               required>
-            <button class="button newsletter-button" type="submit">Подписаться</button>
+            <button class="newsletter-button" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -170,7 +162,7 @@
             <h2 class="visually-hidden">Социальные сети</h2>
             <ul class="footer-social-list">
               <li class="footer-social-item">
-                <a class="footer-social-link" href="#">
+                <a class="footer-social-link" href="http://vk.com/htmlacademy">
                   <svg class="footer-social-icon" aria-hidden="true" focusable="false" width="24" height="15"
                     viewBox="0 0 24 15" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -180,7 +172,7 @@
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="footer-social-link" href="#">
+                <a class="footer-social-link" href="http://t.me/htmlacademy">
                   <svg class="footer-social-icon" aria-hidden="true" focusable="false" width="18" height="17"
                     viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -190,7 +182,7 @@
                 </a>
               </li>
               <li class="footer-social-item">
-                <a class="footer-social-link" href="#">
+                <a class="footer-social-link" href="http://www.youtube.com/user/htmlacademyru">
                   <svg class="footer-social-icon" aria-hidden="true" focusable="false" width="22" height="17"
                     viewBox="0 0 22 17" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -211,7 +203,7 @@
 
           <section class="footer-logo">
             <h2 class="visually-hidden">Логотип</h2>
-            <a class="footer-logo" href="#">
+            <a class="footer-logo" href="http://htmlacademy.ru/">
               <svg class="footer-logo-icon" aria-hidden="true" focusable="false" width="115" height="33"
                 viewBox="0 0 115 33" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 12.9V15.5H2.5V12.9H0Z" />
@@ -242,6 +234,159 @@
           </section>
         </div>
       </footer>
+
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-search">
+          <button class="modal-close-button" type="submit">
+            <span class="visually-hidden">Закрыть</span>
+            <svg class="modal-close-icon" aria-hidden="true" focusable="false" width="15" height="14" viewBox="0 0 15 14" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.1143 1.29231L12.822 0L7.11426 5.70769L1.40657 0L0.114258 1.29231L5.82195 7L0.114258 12.7077L1.40657 14L7.11426 8.29231L12.822 14L14.1143 12.7077L8.40657 7L14.1143 1.29231Z" />
+            </svg>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          </section>
+
+          <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group appointment-form-date">
+              <label class="form-label" for="appointment-date">
+                Дата Заезда:</label>
+              <input class="field-appointment" type="text" id="appointment-date" name="appointment-date"
+                value="27 апреля 2020">
+              <span class="appointment-date">
+                <button class="calendar" type="button" aria-labelledby="calendar-label">
+                  <svg class="calendar-icon" aria-hidden="true" focusable="false" width="17" height="15" viewBox="0 0 17 15"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.86426 10C6.16426 10 6.36426 9.8 6.36426 9.5C6.36426 9.2 6.16426 9 5.86426 9C5.56426 9 5.36426 9.2 5.36426 9.5C5.36426 9.8 5.56426 10 5.86426 10Z" />
+                    <path
+                      d="M15.1143 2H13.1143V0H12.1143V2H4.11426V0H3.11426V2H1.11426C0.514258 2 0.114258 2.4 0.114258 3V14C0.114258 14.5 0.514258 15 1.11426 15H15.1143C15.6143 15 16.1143 14.5 16.1143 14V3C16.1143 2.4 15.6143 2 15.1143 2ZM15.1143 14H1.11426V7H15.1143V14ZM1.11426 6V3H3.11426V5H4.11426V3H12.1143V5H13.1143V3H15.1143V6H1.11426Z" />
+                    <path
+                      d="M8.11426 10C8.41426 10 8.61426 9.8 8.61426 9.5C8.61426 9.2 8.41426 9 8.11426 9C7.81426 9 7.61426 9.2 7.61426 9.5C7.61426 9.8 7.81426 10 8.11426 10Z" />
+                    <path
+                      d="M10.3643 10C10.6643 10 10.8643 9.8 10.8643 9.5C10.8643 9.2 10.6643 9 10.3643 9C10.0643 9 9.86426 9.2 9.86426 9.5C9.86426 9.8 10.0643 10 10.3643 10Z" />
+                    <path
+                      d="M5.86426 11C5.56426 11 5.36426 11.2 5.36426 11.5C5.36426 11.8 5.56426 12 5.86426 12C6.16426 12 6.36426 11.8 6.36426 11.5C6.36426 11.2 6.16426 11 5.86426 11Z" />
+                    <path
+                      d="M3.61426 10C3.91426 10 4.11426 9.8 4.11426 9.5C4.11426 9.2 3.91426 9 3.61426 9C3.31426 9 3.11426 9.2 3.11426 9.5C3.11426 9.8 3.31426 10 3.61426 10Z" />
+                    <path
+                      d="M3.61426 11C3.31426 11 3.11426 11.2 3.11426 11.5C3.11426 11.8 3.31426 12 3.61426 12C3.91426 12 4.11426 11.8 4.11426 11.5C4.11426 11.2 3.91426 11 3.61426 11Z" />
+                    <path
+                      d="M8.11426 11C7.81426 11 7.61426 11.2 7.61426 11.5C7.61426 11.8 7.81426 12 8.11426 12C8.41426 12 8.61426 11.8 8.61426 11.5C8.61426 11.2 8.41426 11 8.11426 11Z" />
+                    <path
+                      d="M10.3643 11C10.0643 11 9.86426 11.2 9.86426 11.5C9.86426 11.8 10.0643 12 10.3643 12C10.6643 12 10.8643 11.8 10.8643 11.5C10.8643 11.2 10.6643 11 10.3643 11Z" />
+                    <path
+                      d="M12.6143 10C12.9143 10 13.1143 9.8 13.1143 9.5C13.1143 9.2 12.9143 9 12.6143 9C12.3143 9 12.1143 9.2 12.1143 9.5C12.1143 9.8 12.3143 10 12.6143 10Z" />
+                    <path
+                      d="M12.6143 11C12.3143 11 12.1143 11.2 12.1143 11.5C12.1143 11.8 12.3143 12 12.6143 12C12.9143 12 13.1143 11.8 13.1143 11.5C13.1143 11.2 12.9143 11 12.6143 11Z" />
+                  </svg>
+                </button>
+              </span>
+            </p>
+            <p class="appointment-text">Мы не можем отправить вас в прошлое.</p>
+
+            <p class="field-group appointment-form-date">
+              <label class="form-label" for="appointment-date">
+                Дата Выезда:</label>
+              <input class="field-appointment" type="text" id="ppointment-date" name="ppointment-date"
+              value="1 сентября 2021">
+              <span class="appointment-date">
+                <button class="calendar" type="button" aria-labelledby="calendar-label">
+                  <svg class="calendar-icon" aria-hidden="true" focusable="false" width="17" height="15" viewBox="0 0 17 15"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.86426 10C6.16426 10 6.36426 9.8 6.36426 9.5C6.36426 9.2 6.16426 9 5.86426 9C5.56426 9 5.36426 9.2 5.36426 9.5C5.36426 9.8 5.56426 10 5.86426 10Z" />
+                    <path
+                      d="M15.1143 2H13.1143V0H12.1143V2H4.11426V0H3.11426V2H1.11426C0.514258 2 0.114258 2.4 0.114258 3V14C0.114258 14.5 0.514258 15 1.11426 15H15.1143C15.6143 15 16.1143 14.5 16.1143 14V3C16.1143 2.4 15.6143 2 15.1143 2ZM15.1143 14H1.11426V7H15.1143V14ZM1.11426 6V3H3.11426V5H4.11426V3H12.1143V5H13.1143V3H15.1143V6H1.11426Z" />
+                    <path
+                      d="M8.11426 10C8.41426 10 8.61426 9.8 8.61426 9.5C8.61426 9.2 8.41426 9 8.11426 9C7.81426 9 7.61426 9.2 7.61426 9.5C7.61426 9.8 7.81426 10 8.11426 10Z" />
+                    <path
+                      d="M10.3643 10C10.6643 10 10.8643 9.8 10.8643 9.5C10.8643 9.2 10.6643 9 10.3643 9C10.0643 9 9.86426 9.2 9.86426 9.5C9.86426 9.8 10.0643 10 10.3643 10Z" />
+                    <path
+                      d="M5.86426 11C5.56426 11 5.36426 11.2 5.36426 11.5C5.36426 11.8 5.56426 12 5.86426 12C6.16426 12 6.36426 11.8 6.36426 11.5C6.36426 11.2 6.16426 11 5.86426 11Z" />
+                    <path
+                      d="M3.61426 10C3.91426 10 4.11426 9.8 4.11426 9.5C4.11426 9.2 3.91426 9 3.61426 9C3.31426 9 3.11426 9.2 3.11426 9.5C3.11426 9.8 3.31426 10 3.61426 10Z" />
+                    <path
+                      d="M3.61426 11C3.31426 11 3.11426 11.2 3.11426 11.5C3.11426 11.8 3.31426 12 3.61426 12C3.91426 12 4.11426 11.8 4.11426 11.5C4.11426 11.2 3.91426 11 3.61426 11Z" />
+                    <path
+                      d="M8.11426 11C7.81426 11 7.61426 11.2 7.61426 11.5C7.61426 11.8 7.81426 12 8.11426 12C8.41426 12 8.61426 11.8 8.61426 11.5C8.61426 11.2 8.41426 11 8.11426 11Z" />
+                    <path
+                      d="M10.3643 11C10.0643 11 9.86426 11.2 9.86426 11.5C9.86426 11.8 10.0643 12 10.3643 12C10.6643 12 10.8643 11.8 10.8643 11.5C10.8643 11.2 10.6643 11 10.3643 11Z" />
+                    <path
+                      d="M12.6143 10C12.9143 10 13.1143 9.8 13.1143 9.5C13.1143 9.2 12.9143 9 12.6143 9C12.3143 9 12.1143 9.2 12.1143 9.5C12.1143 9.8 12.3143 10 12.6143 10Z" />
+                    <path
+                      d="M12.6143 11C12.3143 11 12.1143 11.2 12.1143 11.5C12.1143 11.8 12.3143 12 12.6143 12C12.9143 12 13.1143 11.8 13.1143 11.5C13.1143 11.2 12.9143 11 12.6143 11Z" />
+                  </svg>
+                </button>
+              </span>
+            </p>
+            <p class="appointment-next-text">На эти даты есть свободные номера. Пока есть. </p>
+
+            <div class="people">
+              <p class="field-group appointment-form-people">
+                <label class="form-label form-label-people" for="appointment-people">
+                  Взрослые:
+                </label>
+                <span class="appointment-people">
+                  <button class="people-minus" type="button" aria-labelledby="people-minus">
+                    <svg class="people-minus-icon" aria-hidden="true" focusable="false" width="15" height="2" viewBox="0 0 15 2"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.114258 0L0.114258 2L14.1143 2V0L0.114258 0Z" />
+                    </svg>
+                  </button>
+                  <input class="field-appointment-people" type="text" id="appointment-people" name="appointment-people"
+                    value="2">
+                  <button class="people-plus" type="button" aria-labelledby="people-plus">
+                    <svg class="people-plus-icon" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                    </svg>
+                  </button>
+                </span>
+              </p>
+
+              <p class="field-group appointment-form-people">
+                  <span class="form-label form-label-icon">
+                  <label class="form-label form-label-people-child" for="appointment-people">
+                    Дети:
+                  </label>
+                  <span class="tooltip">
+                    <button class="tooltip-groop" type="button" aria-labelledby="tooltip-label">
+                      <svg class="tooltip-icon" aria-hidden="true" focusable="false" width="3" height="12" viewBox="0 0 3 12"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M0.114258 0H2.11426V2H0.114258V0ZM2.11426 12H0.114258V3H2.11426V12Z" />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут
+                      с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                    </span>
+                  </span>
+                </span>
+                <span class="appointment-people-child">
+                    <button class="child-minus" type="button" aria-labelledby="child-minus">
+                      <svg class="child-minus-icon" aria-hidden="true" focusable="false" width="15" height="2" viewBox="0 0 15 2"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.114258 0L0.114258 2L14.1143 2V0L0.114258 0Z" />
+                      </svg>
+                    </button>
+                    <input class="field-appointment-people-child" type="text" id="appointment-people"
+                      name="appointment-people" value="1">
+                    <button class="child-plus" type="button" aria-labelledby="child-plus">
+                      <svg class="child-plus-icon" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                      </svg>
+                    </button>
+                  </span>
+                </span>
+            </div>
+            <button class="button appointment-submit" type="submit">Найти</button>
+          </form>
+        </div>
+
+      </div>
     </div>
   </body>
 
