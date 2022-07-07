@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -86,10 +86,6 @@ body {
   display: block;
   padding: 20px 12px;
 }
-
-/* .navigation-icon {
-  position: relative;
-} */
 
 .navigation-link {
   position: relative;
@@ -195,8 +191,8 @@ body {
 }
 
 .main-index {
-  color: #000000;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #3f5e72;
   background-image: url("../image/divider.png"),
     url("../image/index-background.jpg");
   background-size: 100% auto;
@@ -211,7 +207,7 @@ body {
 }
 
 .index-text {
-  padding: 63px 272px 90px;
+  padding: 63px 271px 90px;
   text-align: center;
   background-color: #ffffff;
 }
@@ -228,6 +224,11 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #242424;
+}
+
+.advantages {
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .advantages-list {
@@ -312,7 +313,7 @@ body {
 .advantages-item {
   width: 400px;
   min-height: 384px;
-  padding: 0 85px;
+  padding: 0 84px;
   margin: 0;
   display: block;
   background-repeat: no-repeat;
@@ -345,6 +346,8 @@ body {
 }
 
 .advantages-hotel {
+  color: #000000;
+  background-color: #ffffff;
   padding: 90px 304px 93px;
   margin: 0;
   text-align: center;
@@ -393,11 +396,11 @@ body {
 }
 
 .newsletter-1 {
-  padding: 94px 200px;
+  padding: 93px 200px;
   margin: 0;
   background-image: url("../image/background-1.jpg");
   color: #ffffff;
-  background-color: #000000;
+  background-color: #3f5e72;
   background-size:cover;
   background-repeat: no-repeat;
   text-align: center;
@@ -642,7 +645,7 @@ body {
 
 .field-appointment {
   width: 420px;
-  padding: 15px 19px;
+  padding: 14px 19px;
   padding-right: 50px;
   font-family: "PT Sans";
   font-size: 18px;
@@ -660,7 +663,7 @@ body {
 
 .calendar {
   position: absolute;
-  top: 13px;
+  top: 14px;
   right: 16px;
   width: 20px;
   height: 20px;
@@ -869,7 +872,7 @@ body {
 }
 
 .appointment-text {
-  margin: 0 0 11px 155px;
+  margin: 0 0 12px 155px;
   padding-top: 8px;
   font-weight: 400;
   font-size: 16px;
@@ -878,7 +881,7 @@ body {
 }
 
 .appointment-next-text {
-  margin: 0 0 11px 155px;
+  margin: 1px 0 12px 155px;
   padding-top: 8px;
   font-weight: 400;
   font-size: 16px;
@@ -915,7 +918,7 @@ body {
 }
 
 .tooltip-groop {
-  top: 3px;
+  top: 0;
   left: 0;
   width: 25px;
   height: 25px;
@@ -985,7 +988,7 @@ body {
   margin: 0;
   padding: 35px 70px 70px 71px;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #3f5e72;
   background-image: url("../image/background-2.jpg");
   background-size:cover;
   background-repeat: no-repeat;
@@ -1400,11 +1403,11 @@ input[type="number"]:focus {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  margin: 57px 72px;
+  margin: 55px 72px;
 }
 
 .select-control-title {
-  margin: 2px 190px 0 0;
+  margin: 3px 190px 0 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -1494,7 +1497,7 @@ input[type="number"]:focus {
 }
 
 .product-card-title {
-  margin: 10px 0 15px;
+  margin: 12px 0 15px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -1591,7 +1594,7 @@ input[type="number"]:focus {
 .pagination-container {
   display: flex;
   margin: 0;
-  padding: 32px 0 17px;
+  padding: 30px 0 17px;
   align-items: center;
 }
 
@@ -1654,7 +1657,7 @@ input[type="number"]:focus {
 }
 
 .pagination-about-text {
-  padding: 0 0 4px 0;
+  padding: 0 0 5px 0;
   margin-left: auto;
   font-size: 18px;
   color: #333333;
@@ -1667,6 +1670,7 @@ input[type="number"]:focus {
   min-width: 160px;
   padding: 14px 20px;
   padding-right: 50px;
+  font-family: "PT Sans";
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   background-image: url("../image/down-arrow.svg");
